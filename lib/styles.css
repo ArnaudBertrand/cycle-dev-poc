@@ -1,0 +1,53 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+.tools, .editor, .editor-main {
+  height: 100%;
+}
+
+.editor {
+  display: flex;
+}
+
+#editor-inner {
+  height: 100%;
+}
+
+.message-panel {
+  height: 20%;
+  background: #333;
+
+  color: skyblue;
+
+  margin: 0;
+  padding: 5px;
+}
+
+.editor-resizer {
+  width: 10px;
+  background: #445;
+  height: 100%;
+
+  margin-right: 5px;
+
+  cursor: col-resize;
+}
+
+.editor-resizer:after {
+  content: '|';
+  top: 50%;
+  left: 23%;
+  color: gray;
+  position: relative;
+  font-size: 27px;
+}
+
+.app {
+  display: inline-block;
+}
